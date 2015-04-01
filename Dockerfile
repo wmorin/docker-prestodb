@@ -19,6 +19,6 @@ RUN rm /tmp/presto.tar.gz
 
 COPY config/* /opt/presto/etc/
 
-ENTRYPOINT ["/opt/presto/bin/launcher", "run"]
+ENTRYPOINT [ "/opt/presto/bin/launcher", "run" ]
 
 EXPOSE 8080
