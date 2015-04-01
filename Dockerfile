@@ -7,3 +7,7 @@ ADD https://repo1.maven.org/maven2/com/facebook/presto/presto-server/0.100/prest
 RUN mkdir /opt/presto
 RUN tar -zxvf /tmp/presto.tar.gz -C /opt/presto --strip-components=1
 RUN rm /tmp/presto.tar.gz
+
+ENTRYPOINT ["/opt/presto/bin/launcher", "run"]
+
+EXPOSE 8080
