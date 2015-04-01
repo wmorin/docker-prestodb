@@ -1,4 +1,11 @@
+#
+# PrestoDB Docker image
+#
+# https://github.com/wmorin/docker-prestodb
+#
+
 FROM dockerfile/java:oracle-java8
+MAINTAINER Willy Morin <willy.morin@gmail.com>
 
 RUN apt-get update && apt-get install -y python
 
