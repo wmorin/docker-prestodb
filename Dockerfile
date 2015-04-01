@@ -7,6 +7,8 @@
 FROM dockerfile/java:oracle-java8
 MAINTAINER Willy Morin <willy.morin@gmail.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update && apt-get install -y python
 
 ADD https://repo1.maven.org/maven2/com/facebook/presto/presto-server/0.100/presto-server-0.100.tar.gz /tmp/presto.tar.gz
